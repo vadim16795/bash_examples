@@ -1,0 +1,15 @@
+# Find big files
+
+find /  -size +50M | xargs ls -altrh
+
+# Find files by name
+
+find / -iname *.conf
+
+# Find executable files
+
+find / -type f -perm /a=x
+
+# Find top 10 biggest files 
+
+find / -type f -printf "%s\t%p\n" | sort -n | tail -10 | xargs ls -lth
