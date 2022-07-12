@@ -13,3 +13,8 @@ find / -type f -perm /a=x
 # Find top 10 biggest files 
 
 find / -type f -printf "%s\t%p\n" | sort -n | tail -10 | xargs ls -lth
+
+# du example
+
+ du -h *
+ 
