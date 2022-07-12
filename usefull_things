@@ -4,7 +4,7 @@ find /  -size +50M | xargs ls -altrh
 
 # Find files by name
 
-find / -iname *.conf
+find / -iname "*.conf"
 
 # Find executable files
 
